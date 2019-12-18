@@ -12,6 +12,9 @@
 */
 Route::get('/', 'NotesController@index');
 Route::get('/show/{note}', 'NotesController@showOne');
+Route::post('/task', 'NotesController@add_task');
+Route::delete('/task{task}', 'NotesController@del_task');
+Route::get('/calc/{a}/{b}/{c}', 'NotesController@calc');
 
 /*
 Route::get('/', function () {
